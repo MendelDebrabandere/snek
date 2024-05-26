@@ -71,6 +71,20 @@ namespace utils
 
 #pragma region CollisionFunctionality
 
+	bool IsPointInRect(Point2f p1, Rectf rectangle);
+
+
 #pragma endregion CollisionFunctionality
+
+// Sprite
+	struct Sprite
+	{
+		Texture texture;
+		int frames;
+		int cols;
+		float frameTime;
+		int currentFrame;
+		float accumulatedTime;
+	};
 
 }

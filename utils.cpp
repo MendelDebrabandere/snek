@@ -493,6 +493,17 @@ namespace utils
 
 #pragma region CollisionFunctionality
 
+	bool IsPointInRect(Point2f p1, Rectf rectangle)
+	{
+		if ((p1.x >= rectangle.left) && (p1.x <= rectangle.left + rectangle.width))
+		{
+			if ((p1.y >= rectangle.bottom) && (p1.y <= rectangle.bottom + rectangle.height))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 
 #pragma endregion CollisionFunctionality
 }
